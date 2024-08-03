@@ -1,0 +1,1390 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+
+@mixin df(){
+  display: flex;
+justify-content: space-around;
+align-items: center;
+} 
+
+@mixin flex-col(){
+  display: flex;
+  flex-direction: column;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+$primary-color: #f4a305;
+$fff: #fff;
+$background-color: #000000;
+$border-color: rgba(255, 255, 255, 0.1);
+$footer-hover-color: #f4a305;
+$background-color: #161d27;
+$primary-color: #f4a305;
+$card-background: #212836;
+$card-hover-background: #272f3e;
+$font-family: "Outfit", sans-serif;
+$bg-color: #161d27;
+$secondary-color: #ccc;
+$highlight-color: #d4af37;
+$highlight-hover-color: #b08d30;
+$progress-bar-bg: #333;
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+}
+
+header {
+  background: url("../img/bg.png") no-repeat center center;
+  background-size: cover;
+  //   height: 100vh;
+  position: relative;
+
+  .overlay {
+    background: #1f2732cf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .header_item {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-up {
+    padding: 2.5rem;
+    @include df();
+    border-bottom: 2px solid #4e555f;
+
+    .up-img {
+      padding-left: 2rem;
+    }
+
+    .up-btn {
+      padding-right: 2rem;
+      button {
+        background: #ffffff1a;
+        padding: 1.5rem 4.5rem;
+        color: $secondary-color;
+        font-family: "Outfit";
+        font-size: 22px;
+        border: 1px solid #ffffff1a;
+        outline: none;
+      }
+    }
+  }
+
+  nav {
+    z-index: 2;
+    @include df();
+    height: 12vh;
+    border-bottom: 2px solid #4e555f;
+    padding: 3rem 0;
+
+    .nav {
+      li {
+        padding-bottom: 1rem;
+        a {
+          color: $fff;
+          font-family: $font-family;
+          font-size: 22px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .nav-box {
+    @include df();
+    color: $secondary-color;
+    font-family: "Outfit";
+    font-size: 22px;
+    font-weight: 400;
+
+
+    &__item {
+@include df();
+      padding-left: 3rem;
+      padding-right: 2rem;
+      .text {
+        padding-left: 0.5rem;
+        h5 {
+          color: #d1b06b;
+        }
+      }
+    }
+  }
+
+  .header-main {
+    background: url("../img/man.png") no-repeat top right;
+    background-size: 775px;
+    display: flex;
+    width: 100%;
+    .header-main__box {
+      display: flex;
+      flex-direction: column;
+      width: 75vh;
+      padding: 4.5rem 2.5rem;
+
+      .main-logo {
+        padding-bottom: 2rem;
+      }
+
+      .main-text {
+        padding-top: 2rem;
+        padding-bottom: 5.5rem;
+        h1 {
+          color: $fff;
+          font-family: "Cormorant Garamond";
+          font-size: 60px;
+          font-weight: 400;
+          padding-bottom: 2rem;
+        }
+
+        p {
+          font-family: $font-family;
+          font-size: 22px;
+          font-weight: 400;
+          color: #d1b06b;
+          padding-bottom: 2rem;
+        }
+
+        button {
+          padding: 25px 71px;
+          background: #d1b06b;
+          color: #000000;
+          font-family: "Outfit";
+          outline: none;
+          border: 1px solid #d1b06b;
+        }
+      }
+    }
+  }
+}
+
+.header-img {
+  padding-left: 5rem;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  background: #161d27;
+  padding-top: 9rem;
+
+  .img-box {
+    @include flex-col();
+    justify-content: start;
+
+    img {
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 30px;
+    }
+  }
+
+  .info-box {
+    @include flex-col();
+    color: #fff;
+    width: 100vh;
+    padding-top: 1rem;
+
+    h2 {
+      font-family: "Cormorant Garamond";
+      font-size: 45px;
+      font-weight: 400;
+    }
+
+    span {
+      img {
+        padding-bottom: 3rem;
+      }
+    }
+
+    p {
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .own-box {
+      display: flex;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+      h2 {
+        padding-left: 1rem;
+        color: $fff;
+        font-family: "Cormorant Garamond";
+        font-size: 36px;
+        font-weight: 400;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+        background-color: transparent;
+      }
+    }
+
+    .section-foot {
+      display: flex;
+      .section-btn {
+        background: #3b434d;
+        width: 315px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+
+        &__item {
+          @include flex-col();
+
+          p {
+            margin: 0;
+          }
+        }
+
+        span {
+          img {
+            padding-top: 1.5rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+
+      .section-btn__2 {
+        background: #d1af70;
+        width: 315px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          img {
+            padding-top: 1.5rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.practice-areas {
+  @include flex-col();
+  padding-top: 15rem;
+  color: $fff;
+  height: 100vh;
+  background: #161d27;
+
+  .content {
+    margin-bottom: 4rem;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 20vh;
+    }
+
+    h1 {
+      padding-right: 1rem;
+      font-family: "Cormorant Garamond";
+      font-size: 45px;
+      font-weight: 400;
+    }
+
+    p {
+      padding-right: 3rem;
+      width: 700px;
+      font-family: "Outfit";
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .practice-grid {
+    background: #161d27;
+
+    > .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .practice-card {
+      background: #1f2731;
+      display: flex;
+      flex-direction: column;
+      padding: 5.5rem 2rem;
+
+      &__item {
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: $fff;
+          padding: 1rem 2.5rem;
+          background: #161d27;
+        }
+      }
+
+      .practice-card__title {
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #3b434d;
+      }
+
+      h2 {
+        font-family: "Cormorant Garamond";
+        font-size: 35px;
+        font-weight: 400;
+      }
+
+      p {
+        font-family: "Outfit";
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.desevre-box {
+  margin-top: 50rem;
+  height: 100vh;
+  .container {
+    @include flex-col();
+
+    .title {
+      text-align: center;
+
+      h2 {
+        font-family: "Cormorant Garamond";
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 54px;
+      }
+
+      span {
+        img {
+          padding-bottom: 3rem;
+        }
+      }
+
+      p {
+        font-family: "Outfit";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #909090;
+      }
+    }
+
+    .box {
+      display: flex;
+      margin-top: 3rem;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 36px 40px;
+        background: #fbfbfb;
+        margin-right: 1rem;
+
+        img {
+          padding-right: 1rem;
+        }
+        p {
+          color: #909090;
+        }
+      }
+
+      .cub-box {
+        color: #fff;
+        background-image: url("../img/women.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 280px 40px 30px;
+        font-family: "Outfit";
+
+        h4 {
+          font-size: 30px;
+          font-weight: 400;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.partner-box {
+  .container {
+    @include flex-col();
+
+    .title {
+      display: flex;
+      align-items: center;
+      padding-left: 25rem;
+      padding-bottom: 3rem;
+
+      h2 {
+        padding: 0 2rem;
+      }
+    }
+
+    .img-box {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.lawyer-box {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
+  margin-top: 4rem;
+  background: url("../img/bggg.png");
+  padding: 9rem 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: rgba(31, 39, 50, 0.85);
+
+    .history {
+      flex: 1;
+      h2 {
+        font-family: "Cormorant Garamond";
+        font-size: 45px;
+        font-weight: 400;
+      }
+
+      span {
+        img {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .center {
+      img {
+        padding: 0 50px;
+      }
+    }
+
+    .specialisation {
+      flex: 1;
+
+      h2 {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-family: "Cormorant Garamond";
+        font-size: 45px;
+        font-weight: 400;
+      }
+      p {
+        font-family: "Outfit";
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(215, 215, 215, 1);
+      }
+
+      .logo {
+        img {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+
+    .timeline {
+      margin-top: 30px;
+
+      .event {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-weight: 400;
+          color: rgba(209, 176, 107, 1);
+          letter-spacing: 0.4px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .skills {
+      margin-top: 30px;
+      .progress-container {
+        width: 400px; 
+        padding-bottom: 2rem;
+
+        .progress-label {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          margin-bottom: 5px;
+
+          h5 {
+            font-family: "Outfit";
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+
+        .progress-bar {
+          width: 100%;
+          height: 8px; 
+          background-color: #ddd;
+          border-radius: 10px;
+          overflow: hidden;
+
+          .progress-fill {
+            width: 75%; 
+            height: 100%;
+            background-color: #ad8c4e; 
+            border-radius: 10px 0 0 10px;
+          }
+        }
+      }
+
+      span {
+        font-size: 1.1rem;
+      }
+    }
+
+    .consulting-btn {
+      margin-top: 30px;
+      padding: 25px 71px;
+      background-color: rgba(209, 176, 107, 1);
+      border: none;
+      color: $bg-color;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: "Outfit";
+      font-size: 22px;
+      font-weight: 400;
+      outline: none;
+
+      &:hover {
+        background-color: $highlight-hover-color;
+      }
+    }
+  }
+}
+
+.client-box {
+  background: rgba(22, 29, 39, 1);
+  color: #fff;
+  .container {
+    @include flex-col();
+
+
+    .title {
+      text-align: center;
+      margin-bottom: 6rem;
+      padding-top: 10rem;
+
+      h2 {
+        font-family: "Cormorant Garamond";
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 54px;
+      }
+    }
+
+    .wapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 31px;
+      padding-bottom: 10rem;
+
+      .info-box {
+        @include flex-col();
+
+        &:nth-of-type(even) {
+          flex-direction: column-reverse;
+
+          .profile {
+            margin-bottom: 2rem;
+            margin-top: 0;
+          }
+
+          .testimonial-card {
+            border-radius: 40px 0 0 0;
+          }
+        }
+
+        .testimonial-card {
+          background-color: #1e2b3a;
+          color: #fff;
+          border-bottom-left-radius: 40px;
+          padding: 20px;
+          position: relative;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+          .quote {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+            padding-right: 20px;
+
+            span {
+              img {
+                padding-bottom: 2rem;
+                padding-top: 51px;
+              }
+            }
+
+            p {
+              font-family: "Outfit";
+              font-size: 20px;
+              font-weight: 300;
+              line-height: 32px;
+              padding-bottom: 40px;
+            }
+          }
+        }
+        .profile {
+          display: flex;
+          align-items: center;
+          margin-top: 2rem;
+
+          .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+          }
+
+          .profile-details {
+            .name {
+              font-size: 18px;
+              font-weight: bold;
+              margin: 0;
+            }
+
+            .designation {
+              font-size: 14px;
+              color: #b0b0b0;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// .answer-box-start
+
+.answer-box {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h2 {
+      font-family: " Cormorant Garamond";
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 54px;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .box-frame {
+    display: flex;
+    align-items: center;
+
+    .frame-item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      position: relative;
+      padding-right: 1rem;
+
+      .img-box__1 {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          transition: all 0.2s linear;
+        }
+      }
+
+      .after-bar {
+        background: #fff;
+        height: auto;
+        padding: 10px 5px;
+        text-align: center;
+        z-index: 0;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        height: auto;
+        transform: translatey(70px);
+        transition: all 0.2s linear;
+        z-index: 2;
+
+        i:hover {
+          border-bottom: 2px solid gold;
+        }
+
+        i {
+          margin: 0 5px;
+          padding: 5px;
+        }
+      }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        transition: all 0.2s linear;
+      }
+
+      .img-box__1:hover {
+        .after-bar {
+          transform: translateY(0);
+        }
+
+        img {
+          transform: scale(1.1);
+        }
+
+        .overlay {
+          background: #50ebff52;
+        }
+      }
+
+      .foot {
+        padding-top: 1rem;
+        h2 {
+          font-family: " Cormorant Garamond";
+          font-size: 25px;
+          font-weight: 400;
+        }
+        p {
+          font-family: "Outfit";
+          font-size: 15px;
+          font-weight: 400;
+          color: rgba(209, 176, 107);
+        }
+      }
+    }
+  }
+}
+
+.law-box {
+  background: #212836;
+  display: flex;
+  color: #fff;
+  height: 95vh;
+  margin-top: 5rem;
+  padding-top: 10rem;
+
+  .left-box {
+    padding: 2rem 2rem 10rem 2rem;
+    max-width: 85vh;
+
+    h2 {
+      font-family: "Cormorant Garamond";
+      font-size: 45px;
+      font-weight: 400;
+      padding-right: 4rem;
+    }
+    span {
+      img {
+        padding-bottom: 2rem;
+      }
+    }
+
+    p {
+      font-family: "Outfit";
+      font-size: 20px;
+      font-weight: 400;
+      // line-height: 32px;
+      color: rgba(215, 215, 215, 1);
+      // padding-right: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    button {
+      padding: 24px 70px;
+      background: rgba(209, 176, 107, 1);
+      font-family: "Outfit";
+      font-size: 20px;
+      font-weight: 400;
+      outline: none;
+      border: none;
+    }
+  }
+
+  .right-box {
+    width: 85vh;
+    height: 70vh;
+    background: #fff;
+    color: #000000;
+    margin-left: 5rem;
+    padding: 40px;
+
+    .box {
+      padding: 40px;
+      border: 15px solid rgba(215, 215, 215, 1);
+      background: #fff;
+
+      h2 {
+        font-family: " Cormorant Garamond";
+        font-size: 42px;
+        font-weight: 400;
+        padding-bottom: 1rem;
+        padding-top: 65px;
+      }
+
+      p {
+        font-family: "Outfit";
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(144, 144, 144, 1);
+        padding-bottom: 1rem;
+      }
+      .foot {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        img {
+          padding-right: 1rem;
+        }
+
+        &__item {
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.log-box {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/bgggs.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    background-color: #1e2b3a;
+    padding: 65px 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-form {
+      // max-width: 500px;
+      min-width: 100%;
+      margin: auto;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-group {
+      flex: 1;
+      margin: 10px;
+    }
+
+    label {
+      color: #fff;
+      display: block;
+      background: transparent;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid rgba(59, 67, 78, 1);
+      margin: 10px;
+    }
+    ::placeholder {
+      color: #fff;
+      font-family: "Outfit";
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    textarea {
+      max-height: 200px;
+      min-height: 120px;
+      margin-bottom: 2rem;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: center;
+      button {
+        display: block;
+        padding: 22px 30px;
+        background-color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Outfit";
+        font-size: 20px;
+        font-weight: 700;
+
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+.recent-box {
+  display: flex;
+  flex-direction: column;
+  background: rgba(22, 29, 39, 1);
+  color: #fff;
+
+  .container {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    .title {
+      text-align: center;
+      margin-bottom: 2rem;
+      h2 {
+        font-family: Cormorant Garamond;
+        font-size: 45px;
+        font-weight: 400;
+      }
+    }
+
+    .info-box {
+      display: flex;
+      padding-top: 5rem;
+
+      .img-box {
+        padding-right: 2rem;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .item-title {
+          border-bottom: 2px solid rgba(78, 85, 95, 1);
+          padding-bottom: 0.5rem;
+          margin-bottom: 1.5rem;
+          display: flex;
+          :nth-child(1) {
+            border-right: 1px solid rgba(209, 176, 107, 1);
+            padding-right: 20px;
+            margin-right: 1rem;
+            font-size: 18px;
+          }
+          p {
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(209, 176, 107, 1);
+          }
+        }
+
+        .item-text__2 {
+          padding-right: 2rem;
+          h2 {
+            font-family: Cormorant Garamond;
+            font-size: 45px;
+            font-weight: 400;
+            padding-bottom: 1rem;
+          }
+
+          p {
+            font-family: "Outfit";
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 1rem;
+          }
+
+          a {
+            color: rgba(209, 176, 107, 1);
+            padding-top: 1rem;
+            p {
+              padding-bottom: 0.5rem;
+              font-family: Outfit;
+              font-size: 22px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.library-box {
+  background: rgba(22, 29, 39, 1);
+  color: #fff;
+  // margin-top: 3rem;
+  padding-top: 5rem;
+  border-top: 2px solid rgba(59, 67, 78, 1);
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .cards {
+      max-width: 440px;
+      max-height: 725px;
+      margin-right: 1rem;
+      margin-bottom: 4rem;
+      .item-title {
+        border-bottom: 2px solid rgba(78, 85, 95, 1);
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        :nth-child(1) {
+          border-right: 1px solid rgba(209, 176, 107, 1);
+          padding-right: 20px;
+          margin-right: 1rem;
+          font-size: 18px;
+        }
+        p {
+          font-family: Outfit;
+          font-size: 18px;
+          font-weight: 400;
+          color: rgba(209, 176, 107, 1);
+        }
+      }
+
+      .item-text__2 {
+        padding-right: 2rem;
+        h2 {
+          font-family: Cormorant Garamond;
+          font-size: 30px;
+          font-weight: 400;
+        }
+
+        p {
+          font-family: Outfit;
+          font-size: 20px;
+          font-weight: 400;
+          padding-bottom: 1rem;
+        }
+
+        a {
+          color: rgba(209, 176, 107, 1);
+          padding-top: 1rem;
+          p {
+            padding-bottom: 0.5rem;
+            font-family: Outfit;
+            font-size: 22px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: rgba(22, 29, 39, 1);
+  height: 100vh;
+  color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .footer-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5rem;
+      padding-top: 5rem;
+
+      img {
+        max-width: 500px;
+      }
+    }
+
+    .box-main {
+      display: flex;
+      // justify-content: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .footer-item {
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        .title {
+          // padding: 20px 0;
+          padding-right: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-top: 2px solid rgba(59, 67, 78, 1);
+          border-bottom: 2px solid rgba(59, 67, 78, 1);
+          margin-bottom: 5rem;
+          cursor: pointer;
+
+          h2 {
+            font-family: Cormorant Garamond;
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+        .box {
+          display: flex;
+
+          .item-1 {
+            margin-right: 5rem;
+            ul {
+              // padding-right: 0;
+              padding: 0;
+              li {
+                padding-bottom: 1.5rem;
+                a {
+                  text-decoration: none;
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .last-item {
+            // max-width: 100px;
+            ul {
+              padding: 0;
+              li {
+                padding-bottom: 1.5rem;
+                a {
+                  text-decoration: none;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer-2 {
+        .title {
+          // padding: 20px 0;
+          padding-right: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-top: 2px solid rgba(59, 67, 78, 1);
+          border-bottom: 2px solid rgba(59, 67, 78, 1);
+          margin-bottom: 5rem;
+          cursor: pointer;
+
+          h2 {
+            font-family: Cormorant Garamond;
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+        &__item {
+          ul {
+            // padding-right: 0;
+            padding: 0;
+            li {
+              padding-bottom: 1.5rem;
+              a {
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-3 {
+        .title {
+          // padding: 20px 0;
+          padding-right: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 25px;
+          padding-bottom: 30px;
+          border-top: 2px solid rgba(59, 67, 78, 1);
+          border-bottom: 2px solid rgba(59, 67, 78, 1);
+          margin-bottom: 5rem;
+          cursor: pointer;
+
+          h2 {
+            font-family: Cormorant Garamond;
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+        &__item {
+          ul {
+            // padding-right: 0;
+            padding: 0;
+            li {
+              padding-bottom: 1.5rem;
+              a {
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-4 {
+        .title {
+          padding-right: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 25px;
+          padding-bottom: 30px;
+          border-top: 2px solid rgba(59, 67, 78, 1);
+          border-bottom: 2px solid rgba(59, 67, 78, 1);
+          margin-bottom: 5rem;
+          cursor: pointer;
+          h2 {
+            font-family: Cormorant Garamond;
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $footer-border-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // margin-top: 40px;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgba(59, 67, 78, 1);
+  background: $background-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $font-color;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $footer-hover-color;
+          transition: color 0.3s;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-items: center;
+      p {
+        color: rgba(209, 176, 107, 1);
+        font-family: "Outfit";
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      a {
+        color: $font-color;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+          color: $footer-hover-color;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}

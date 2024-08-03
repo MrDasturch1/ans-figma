@@ -1,0 +1,1176 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+header {
+  background: url("../img/bg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+header .overlay {
+  background: rgba(31, 39, 50, 0.8117647059);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+header .header_item {
+  position: relative;
+  z-index: 1;
+}
+header .nav-up {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4e555f;
+}
+header .nav-up .up-img {
+  padding-left: 2rem;
+}
+header .nav-up .up-btn {
+  padding-right: 2rem;
+}
+header .nav-up .up-btn button {
+  background: rgba(255, 255, 255, 0.1019607843);
+  padding: 1.5rem 4.5rem;
+  color: #ccc;
+  font-family: "Outfit";
+  font-size: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  outline: none;
+}
+header nav {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  border-bottom: 2px solid #4e555f;
+  padding: 3rem 0;
+}
+header nav .nav li {
+  padding-bottom: 1rem;
+}
+header nav .nav li a {
+  color: #ccc;
+  font-family: "Outfit";
+  font-size: 22px;
+  font-weight: 400;
+}
+header .nav-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ccc;
+  font-family: "Outfit";
+  font-size: 22px;
+  font-weight: 400;
+}
+header .nav-box__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+header .nav-box__item .text {
+  padding-left: 0.5rem;
+}
+header .nav-box__item .text h5 {
+  color: #d1b06b;
+}
+header .header-main {
+  background: url("../img/man.png") no-repeat top right;
+  background-size: 775px;
+  display: flex;
+  width: 100%;
+}
+header .header-main .header-main__box {
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  padding: 4.5rem 2.5rem;
+}
+header .header-main .header-main__box .main-logo {
+  padding-bottom: 2rem;
+}
+header .header-main .header-main__box .main-text {
+  padding-top: 2rem;
+  padding-bottom: 5.5rem;
+}
+header .header-main .header-main__box .main-text h1 {
+  color: #fff;
+  font-family: "Cormorant Garamond";
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+header .header-main .header-main__box .main-text p {
+  font-family: "Outfit";
+  font-size: 22px;
+  font-weight: 400;
+  color: #d1b06b;
+  padding-bottom: 2rem;
+}
+header .header-main .header-main__box .main-text button {
+  padding: 25px 71px;
+  background: #d1b06b;
+  color: #000000;
+  font-family: "Outfit";
+  outline: none;
+  border: 1px solid #d1b06b;
+}
+
+.header-img {
+  padding-left: 5rem;
+}
+.header-img img {
+  height: 50px;
+  width: 50px;
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  background: #161d27;
+  padding-top: 9rem;
+}
+section .img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+section .img-box img {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 30px;
+}
+section .info-box {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 100vh;
+  padding-top: 1rem;
+}
+section .info-box h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+}
+section .info-box span img {
+  padding-bottom: 3rem;
+}
+section .info-box p {
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+}
+section .info-box .own-box {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+section .info-box .own-box h2 {
+  padding-left: 1rem;
+  color: #fff;
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  font-weight: 400;
+}
+section .info-box .own-box img {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+}
+section .info-box .section-foot {
+  display: flex;
+}
+section .info-box .section-foot .section-btn {
+  background: #3b434d;
+  width: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+section .info-box .section-foot .section-btn__item {
+  display: flex;
+  flex-direction: column;
+}
+section .info-box .section-foot .section-btn__item p {
+  margin: 0;
+}
+section .info-box .section-foot .section-btn span img {
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+}
+section .info-box .section-foot .section-btn__2 {
+  background: #d1af70;
+  width: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .info-box .section-foot .section-btn__2 span img {
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+}
+
+.practice-areas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  color: #fff;
+  height: 100vh;
+  background: #161d27;
+}
+.practice-areas .content {
+  margin-bottom: 4rem;
+}
+.practice-areas .content .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20vh;
+}
+.practice-areas .content h1 {
+  padding-right: 1rem;
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+}
+.practice-areas .content p {
+  padding-right: 3rem;
+  width: 700px;
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 300;
+}
+.practice-areas .practice-grid {
+  background: #161d27;
+}
+.practice-areas .practice-grid > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.practice-areas .practice-grid .practice-card {
+  background: #1f2731;
+  display: flex;
+  flex-direction: column;
+  padding: 5.5rem 2rem;
+}
+.practice-areas .practice-grid .practice-card__item {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.practice-areas .practice-grid .practice-card__item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  background: #161d27;
+}
+.practice-areas .practice-grid .practice-card .practice-card__title {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #3b434d;
+}
+.practice-areas .practice-grid .practice-card h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 35px;
+  font-weight: 400;
+}
+.practice-areas .practice-grid .practice-card p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.desevre-box {
+  margin-top: 50rem;
+  height: 100vh;
+}
+.desevre-box .container {
+  display: flex;
+  flex-direction: column;
+}
+.desevre-box .container .title {
+  text-align: center;
+}
+.desevre-box .container .title h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 54px;
+}
+.desevre-box .container .title span img {
+  padding-bottom: 3rem;
+}
+.desevre-box .container .title p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #909090;
+}
+.desevre-box .container .box {
+  display: flex;
+  margin-top: 3rem;
+}
+.desevre-box .container .box__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 40px;
+  background: #fbfbfb;
+  margin-right: 1rem;
+}
+.desevre-box .container .box__item img {
+  padding-right: 1rem;
+}
+.desevre-box .container .box__item p {
+  color: #909090;
+}
+.desevre-box .container .box .cub-box {
+  color: #fff;
+  background-image: url("../img/women.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 280px 40px 30px;
+  font-family: "Outfit";
+}
+.desevre-box .container .box .cub-box h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.desevre-box .container .box .cub-box p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.partner-box .container {
+  display: flex;
+  flex-direction: column;
+}
+.partner-box .container .title {
+  display: flex;
+  align-items: center;
+  padding-left: 25rem;
+  padding-bottom: 3rem;
+}
+.partner-box .container .title h2 {
+  padding: 0 2rem;
+}
+.partner-box .container .img-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lawyer-box {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #161d27;
+  color: #fff;
+  margin-top: 4rem;
+  background: url("../img/bggg.png");
+  padding: 9rem 0;
+}
+.lawyer-box .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(31, 39, 50, 0.85);
+}
+.lawyer-box .container .history {
+  flex: 1;
+}
+.lawyer-box .container .history h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+}
+.lawyer-box .container .history span img {
+  padding-bottom: 1rem;
+}
+.lawyer-box .container .center img {
+  padding: 0 50px;
+}
+.lawyer-box .container .specialisation {
+  flex: 1;
+}
+.lawyer-box .container .specialisation h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+}
+.lawyer-box .container .specialisation p {
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(215, 215, 215);
+}
+.lawyer-box .container .specialisation .logo img {
+  padding-bottom: 2rem;
+}
+.lawyer-box .container .timeline {
+  margin-top: 30px;
+}
+.lawyer-box .container .timeline .event {
+  margin-bottom: 30px;
+}
+.lawyer-box .container .timeline .event h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: rgb(209, 176, 107);
+  letter-spacing: 0.4px;
+}
+.lawyer-box .container .timeline .event p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+.lawyer-box .container .skills {
+  margin-top: 30px;
+}
+.lawyer-box .container .skills .progress-container {
+  width: 400px; /* Total width of the progress bar */
+  padding-bottom: 2rem;
+}
+.lawyer-box .container .skills .progress-container .progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.lawyer-box .container .skills .progress-container .progress-label h5 {
+  font-family: "Outfit";
+  font-size: 15px;
+  font-weight: 400;
+}
+.lawyer-box .container .skills .progress-container .progress-bar {
+  width: 100%;
+  height: 8px; /* Height of the progress bar */
+  background-color: #ddd; /* Light gray background for the progress bar */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lawyer-box .container .skills .progress-container .progress-bar .progress-fill {
+  width: 75%; /* Progress percentage */
+  height: 100%;
+  background-color: #ad8c4e; /* Gold color for progress */
+  border-radius: 10px 0 0 10px;
+}
+.lawyer-box .container .skills span {
+  font-size: 1.1rem;
+}
+.lawyer-box .container .consulting-btn {
+  margin-top: 30px;
+  padding: 25px 71px;
+  background-color: rgb(209, 176, 107);
+  border: none;
+  color: #161d27;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Outfit";
+  font-size: 22px;
+  font-weight: 400;
+  outline: none;
+}
+.lawyer-box .container .consulting-btn:hover {
+  background-color: #b08d30;
+}
+
+.client-box {
+  background: rgb(22, 29, 39);
+  color: #fff;
+}
+.client-box .container {
+  display: flex;
+  flex-direction: column;
+}
+.client-box .container .title {
+  text-align: center;
+  margin-bottom: 6rem;
+  padding-top: 10rem;
+}
+.client-box .container .title h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 54px;
+}
+.client-box .container .wapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 31px;
+  padding-bottom: 10rem;
+}
+.client-box .container .wapper .info-box {
+  display: flex;
+  flex-direction: column;
+}
+.client-box .container .wapper .info-box:nth-of-type(even) {
+  flex-direction: column-reverse;
+}
+.client-box .container .wapper .info-box:nth-of-type(even) .profile {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.client-box .container .wapper .info-box:nth-of-type(even) .testimonial-card {
+  border-radius: 40px 0 0 0;
+}
+.client-box .container .wapper .info-box .testimonial-card {
+  background-color: #1e2b3a;
+  color: #fff;
+  border-bottom-left-radius: 40px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.client-box .container .wapper .info-box .testimonial-card .quote {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.client-box .container .wapper .info-box .testimonial-card .quote span img {
+  padding-bottom: 2rem;
+  padding-top: 51px;
+}
+.client-box .container .wapper .info-box .testimonial-card .quote p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 40px;
+}
+.client-box .container .wapper .info-box .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.client-box .container .wapper .info-box .profile .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.client-box .container .wapper .info-box .profile .profile-details .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.client-box .container .wapper .info-box .profile .profile-details .designation {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.answer-box {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+}
+.answer-box .title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.answer-box .title h2 {
+  font-family: " Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 54px;
+  padding-bottom: 0.5rem;
+}
+.answer-box .box-frame {
+  display: flex;
+  align-items: center;
+}
+.answer-box .box-frame .frame-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: relative;
+  padding-right: 1rem;
+}
+.answer-box .box-frame .frame-item .img-box__1 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.answer-box .box-frame .frame-item .img-box__1 img {
+  transition: all 0.2s linear;
+}
+.answer-box .box-frame .frame-item .after-bar {
+  background: #fff;
+  height: auto;
+  padding: 10px 5px;
+  text-align: center;
+  z-index: 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+  transform: translatey(70px);
+  transition: all 0.2s linear;
+  z-index: 2;
+}
+.answer-box .box-frame .frame-item .after-bar i:hover {
+  border-bottom: 2px solid gold;
+}
+.answer-box .box-frame .frame-item .after-bar i {
+  margin: 0 5px;
+  padding: 5px;
+}
+.answer-box .box-frame .frame-item .overlay {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+.answer-box .box-frame .frame-item .img-box__1:hover .after-bar {
+  transform: translateY(0);
+}
+.answer-box .box-frame .frame-item .img-box__1:hover img {
+  transform: scale(1.1);
+}
+.answer-box .box-frame .frame-item .img-box__1:hover .overlay {
+  background: rgba(80, 235, 255, 0.3215686275);
+}
+.answer-box .box-frame .frame-item .foot {
+  padding-top: 1rem;
+}
+.answer-box .box-frame .frame-item .foot h2 {
+  font-family: " Cormorant Garamond";
+  font-size: 25px;
+  font-weight: 400;
+}
+.answer-box .box-frame .frame-item .foot p {
+  font-family: "Outfit";
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(209, 176, 107);
+}
+
+.law-box {
+  background: #212836;
+  display: flex;
+  color: #fff;
+  height: 95vh;
+  margin-top: 5rem;
+  padding-top: 10rem;
+}
+.law-box .left-box {
+  padding: 2rem 2rem 10rem 2rem;
+  max-width: 85vh;
+}
+.law-box .left-box h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  font-weight: 400;
+  padding-right: 4rem;
+}
+.law-box .left-box span img {
+  padding-bottom: 2rem;
+}
+.law-box .left-box p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(215, 215, 215);
+  padding-bottom: 2rem;
+}
+.law-box .left-box button {
+  padding: 24px 70px;
+  background: rgb(209, 176, 107);
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+.law-box .right-box {
+  width: 85vh;
+  height: 70vh;
+  background: #fff;
+  color: #000000;
+  margin-left: 5rem;
+  padding: 40px;
+}
+.law-box .right-box .box {
+  padding: 40px;
+  border: 15px solid rgb(215, 215, 215);
+  background: #fff;
+}
+.law-box .right-box .box h2 {
+  font-family: " Cormorant Garamond";
+  font-size: 42px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  padding-top: 65px;
+}
+.law-box .right-box .box p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(144, 144, 144);
+  padding-bottom: 1rem;
+}
+.law-box .right-box .box .foot {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.law-box .right-box .box .foot img {
+  padding-right: 1rem;
+}
+.law-box .right-box .box .foot__item p {
+  margin: 0;
+  padding: 0;
+}
+
+.log-box {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/bgggs.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-box .container {
+  background-color: #1e2b3a;
+  padding: 65px 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-box .container .contact-form {
+  min-width: 100%;
+  margin: auto;
+}
+.log-box .container .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+.log-box .container .form-group {
+  flex: 1;
+  margin: 10px;
+}
+.log-box .container label {
+  color: #fff;
+  display: block;
+  background: transparent;
+}
+.log-box .container input,
+.log-box .container textarea {
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(59, 67, 78);
+  margin: 10px;
+}
+.log-box .container ::placeholder {
+  color: #fff;
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+}
+.log-box .container textarea {
+  max-height: 200px;
+  min-height: 120px;
+  margin-bottom: 2rem;
+}
+.log-box .container .foot {
+  display: flex;
+  justify-content: center;
+}
+.log-box .container .foot button {
+  display: block;
+  padding: 22px 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 700;
+}
+.log-box .container .foot button:hover {
+  background-color: #ddd;
+}
+
+.recent-box {
+  display: flex;
+  flex-direction: column;
+  background: rgb(22, 29, 39);
+  color: #fff;
+}
+.recent-box .container {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.recent-box .container .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.recent-box .container .title h2 {
+  font-family: Cormorant Garamond;
+  font-size: 45px;
+  font-weight: 400;
+}
+.recent-box .container .info-box {
+  display: flex;
+  padding-top: 5rem;
+}
+.recent-box .container .info-box .img-box {
+  padding-right: 2rem;
+}
+.recent-box .container .info-box .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recent-box .container .info-box .text .item-title {
+  border-bottom: 2px solid rgb(78, 85, 95);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+.recent-box .container .info-box .text .item-title :nth-child(1) {
+  border-right: 1px solid rgb(209, 176, 107);
+  padding-right: 20px;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+.recent-box .container .info-box .text .item-title p {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(209, 176, 107);
+}
+.recent-box .container .info-box .text .item-text__2 {
+  padding-right: 2rem;
+}
+.recent-box .container .info-box .text .item-text__2 h2 {
+  font-family: Cormorant Garamond;
+  font-size: 45px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.recent-box .container .info-box .text .item-text__2 p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.recent-box .container .info-box .text .item-text__2 a {
+  color: rgb(209, 176, 107);
+  padding-top: 1rem;
+}
+.recent-box .container .info-box .text .item-text__2 a p {
+  padding-bottom: 0.5rem;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.library-box {
+  background: rgb(22, 29, 39);
+  color: #fff;
+  padding-top: 5rem;
+  border-top: 2px solid rgb(59, 67, 78);
+}
+.library-box .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.library-box .container .cards {
+  max-width: 440px;
+  max-height: 725px;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+.library-box .container .cards .item-title {
+  border-bottom: 2px solid rgb(78, 85, 95);
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+.library-box .container .cards .item-title :nth-child(1) {
+  border-right: 1px solid rgb(209, 176, 107);
+  padding-right: 20px;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+.library-box .container .cards .item-title p {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(209, 176, 107);
+}
+.library-box .container .cards .item-text__2 {
+  padding-right: 2rem;
+}
+.library-box .container .cards .item-text__2 h2 {
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+}
+.library-box .container .cards .item-text__2 p {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.library-box .container .cards .item-text__2 a {
+  color: rgb(209, 176, 107);
+  padding-top: 1rem;
+}
+.library-box .container .cards .item-text__2 a p {
+  padding-bottom: 0.5rem;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+footer {
+  background: rgb(22, 29, 39);
+  height: 100vh;
+  color: #fff;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+}
+footer .container .footer-title img {
+  max-width: 500px;
+}
+footer .container .box-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .container .box-main .footer-item {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+footer .container .box-main .footer-item .title {
+  padding-right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid rgb(59, 67, 78);
+  border-bottom: 2px solid rgb(59, 67, 78);
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+footer .container .box-main .footer-item .title h2 {
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+}
+footer .container .box-main .footer-item .box {
+  display: flex;
+}
+footer .container .box-main .footer-item .box .item-1 {
+  margin-right: 5rem;
+}
+footer .container .box-main .footer-item .box .item-1 ul {
+  padding: 0;
+}
+footer .container .box-main .footer-item .box .item-1 ul li {
+  padding-bottom: 1.5rem;
+}
+footer .container .box-main .footer-item .box .item-1 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .box-main .footer-item .box .last-item ul {
+  padding: 0;
+}
+footer .container .box-main .footer-item .box .last-item ul li {
+  padding-bottom: 1.5rem;
+}
+footer .container .box-main .footer-item .box .last-item ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .box-main .footer-2 .title {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid rgb(59, 67, 78);
+  border-bottom: 2px solid rgb(59, 67, 78);
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+footer .container .box-main .footer-2 .title h2 {
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+}
+footer .container .box-main .footer-2__item ul {
+  padding: 0;
+}
+footer .container .box-main .footer-2__item ul li {
+  padding-bottom: 1.5rem;
+}
+footer .container .box-main .footer-2__item ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .box-main .footer-3 .title {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-top: 2px solid rgb(59, 67, 78);
+  border-bottom: 2px solid rgb(59, 67, 78);
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+footer .container .box-main .footer-3 .title h2 {
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+}
+footer .container .box-main .footer-3__item ul {
+  padding: 0;
+}
+footer .container .box-main .footer-3__item ul li {
+  padding-bottom: 1.5rem;
+}
+footer .container .box-main .footer-3__item ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .box-main .footer-4 .title {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-top: 2px solid rgb(59, 67, 78);
+  border-bottom: 2px solid rgb(59, 67, 78);
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+footer .container .box-main .footer-4 .title h2 {
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgb(59, 67, 78);
+  background: #161d27;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-bottom .container p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-bottom .container p a {
+  color: #f4a305;
+  text-decoration: none;
+}
+.footer-bottom .container p a:hover {
+  color: #f4a305;
+  transition: color 0.3s;
+}
+.footer-bottom .container .social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+.footer-bottom .container .social-icons p {
+  color: rgb(209, 176, 107);
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer-bottom .container .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.footer-bottom .container .social-icons a:hover {
+  color: #f4a305;
+  transition: color 0.3s;
+}/*# sourceMappingURL=style.css.map */
